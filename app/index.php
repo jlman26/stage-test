@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // Load all required files.
 include_once('.' . DIRECTORY_SEPARATOR . 'Services' . DIRECTORY_SEPARATOR . 'Loader.php');
@@ -10,7 +9,9 @@ Loader::loadFilesIn('Routes');
 
 // Add all routes.
 Router::add('item_create', CreateRoute::class);
+Router::add('item_delete', DeleteRoute::class);
 Router::add(null, IndexRoute::class);
+
 
 // Navigate using router.
 Router::navigate();

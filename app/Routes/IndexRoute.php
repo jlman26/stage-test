@@ -11,10 +11,13 @@ class IndexRoute
 		$view = '
 			<h1>Todo lijst</h1>
 			' . $view . '
-			<a class="btn btn-primary" href="index.php?action=item_create">Taak toevoegen</a>
+			<a class="btn btn-Dark" href="index.php?action=item_create">Taak toevoegen</a>
 		';
 		return $view;
+		
 	}
+
+	
 
 	
 	

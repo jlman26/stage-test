@@ -16,6 +16,7 @@ class Session
 				|| empty($_COOKIE['PHPSESSID'])
 			) {
 				static::push('items', [
+					'id' => uniqid(),
 					'title' => 'Stage opdracht',
 					'content' => 'Opdracht voor NC-Websites afronden zodat ik een geweldige stage zal hebben!',
 					'status' => 'doing',
