@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // Load all required files.
 include_once('.' . DIRECTORY_SEPARATOR . 'Services' . DIRECTORY_SEPARATOR . 'Loader.php');
@@ -13,3 +14,4 @@ Router::add(null, IndexRoute::class);
 
 // Navigate using router.
 Router::navigate();
+
